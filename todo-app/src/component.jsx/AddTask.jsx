@@ -13,6 +13,13 @@ const AddTask = () => {
     console.log(taskList);
   }
 
+  function deleteTodo (indexToBeDeleted) {
+    
+    const updatedList = taskList.filter((_, index) => index !== indexToBeDeleted)
+    setTaskList(updatedList)
+    
+  }
+
   return (
     <div className="todo-container">
       <h1>Todo</h1>
@@ -41,6 +48,10 @@ const AddTask = () => {
             <li key={index}>
               <input type="checkbox" />
               {task}
+              <div className="dlt-btn" ><button onClick={() => {
+                deleteTodo(index)
+              }}>❌</button></div>
+              
             </li>
           ))}
         </ul>
