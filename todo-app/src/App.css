@@ -91,3 +91,18 @@ input::-webkit-inner-spin-button {
 /* box-shadow: 0 0 10px #0000007f; */
 
 }
+
+/* css for guess the correct number project */
+
+.guess-conatiner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.inputNum{
+  text-align: center;
+  width: 400px;
+  padding: 10px;
+}
